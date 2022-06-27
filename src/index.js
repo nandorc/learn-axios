@@ -1,6 +1,7 @@
 import { buildAction, buildSection } from './components/index';
 import MinimalSample from './samples/01-getting-started/01-minimal-sample';
 import SendQueryParams from './samples/01-getting-started/02-send-query-params';
+import PostRequest from './samples/01-getting-started/03-post-request';
 
 // Heading
 const app = document.getElementById('app')
@@ -17,3 +18,4 @@ const gettingStartedSection = buildSection('01 Getting Started')
 app.appendChild(gettingStartedSection)
 gettingStartedSection.appendChild(buildAction('01 Minimal Sample', MinimalSample))
 gettingStartedSection.appendChild(buildAction('02 Send Query Params', SendQueryParams))
+gettingStartedSection.appendChild(buildAction('03 Post Request', PostRequest))
